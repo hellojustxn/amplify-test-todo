@@ -11,3 +11,18 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+amplify-authenticator {
+  background: tomato;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 100vh;
+}
+:root {
+  --amplify-primary-color: #6347ff;
+  --amplify-primary-tint: #ff7359;
+  --amplify-primary-shade: #e0573e;
+}

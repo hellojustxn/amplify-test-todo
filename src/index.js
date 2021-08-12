@@ -1,13 +1,25 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import {AmplifyAuthenticator, AmplifyAuthContainer, AmplifySignOut,AmplifySignIn} from "@aws-amplify/ui-react";
+import {AmplifyChatbot} from "@aws-amplify/ui-react";
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <AmplifyAuthContainer>
+    <AmplifyAuthenticator>
+      <AmplifySignIn
+        headerText="My Custom Sign In Text"
+        slot="sign-in">
+       </AmplifySignIn>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </AmplifyAuthenticator>
+  </AmplifyAuthContainer>,
   document.getElementById('root')
 );
 
